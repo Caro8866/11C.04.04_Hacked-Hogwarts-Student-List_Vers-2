@@ -11,6 +11,7 @@ html {
   font-size: 16px;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  background-color: rgb(228, 228, 228);
 }
 
 body {
@@ -25,4 +26,51 @@ ul {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.container {
+  --max-width: 70vw;
+  --container-padding: 1.5rem;
+
+  width: min((var(--max-width)), 100% - (var(--container-padding) * 2));
+  margin-inline: auto;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  margin: auto;
+}
+
+table {
+  background-color: rgb(245, 245, 245);
+  font-family: Helvetica, Arial, sans-serif, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+thead {
+  background-color: rgb(47, 47, 47);
+  color: white;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  padding: 0.5rem;
+}
+
+tr:nth-child(even) {
+  background-color: #d5d4d4;
+}
+
+[data-field="modal"] {
+  text-align: center;
+}
+
+.statistics-section {
+  background-color: rgb(48, 48, 48);
+  padding: 1rem;
+  color: white;
+  margin-top: 1.35rem;
 }

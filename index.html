@@ -8,8 +8,79 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header>
+      <h1>Hogwarts School of Witchcraft and Wizardry</h1>
+      <h2>Class of 1991</h2>
+    </header>
+    <main class="container">
+      <div class="student-table">
+        <div id="FilterSection">
+          <label for="filter">Select Filter</label>
+          <select name="filter" id="filter">
+            <option value="default">No Filter</option>
+            <option class="filter" data-action="filter" data-filter="Gryffindor">Show Gryffindor Only</option>
+            <option class="filter" data-action="filter" data-filter="Hufflepuff">Show Hufflepuff Only</option>
+            <option class="filter" data-action="filter" data-filter="Slytherin">Show Slytherin Only</option>
+            <option class="filter" data-action="filter" data-filter="Ravenclaw">Show Ravenclaw Only</option>
+            <option class="filter" data-action="filter" data-filter="Prefect">Show Prefects Only</option>
+            <option class="filter" data-action="filter" data-filter="InquisitorialSquad">Show Inquisitorial Squad Only</option>
+            <option class="filter" data-action="filter" data-filter="Expelled">Show Expelled Students Only</option>
+          </select>
+        </div>
+        <table>
+          <thead>
+            <th data-action="sort" data-sort-direction="asc" data-sort="first-name">First Name</th>
+            <th data-action="sort" data-sort-direction="asc" data-sort="last-name">Last Name</th>
+            <th data-action="sort" data-sort-direction="asc" data-sort="house">House</th>
+            <th>View Details</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-field="first-name">Harry</td>
+              <td data-field="last-name">Potter</td>
+              <td data-field="house">Gryffindor</td>
+              <td data-field="modal"><button>View Details</button></td>
+            </tr>
+            <tr>
+              <td data-field="first-name">Harry</td>
+              <td data-field="last-name">Potter</td>
+              <td data-field="house">Gryffindor</td>
+              <td data-field="modal"><button>View Details</button></td>
+            </tr>
+            <tr>
+              <td data-field="first-name">Harry</td>
+              <td data-field="last-name">Potter</td>
+              <td data-field="house">Gryffindor</td>
+              <td data-field="modal"><button>View Details</button></td>
+            </tr>
+            <tr>
+              <td data-field="first-name">Harry</td>
+              <td data-field="last-name">Potter</td>
+              <td data-field="house">Gryffindor</td>
+              <td data-field="modal"><button>View Details</button></td>
+            </tr>
+            <tr>
+              <td data-field="first-name">Harry</td>
+              <td data-field="last-name">Potter</td>
+              <td data-field="house">Gryffindor</td>
+              <td data-field="modal"><button>View Details</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <aside class="statistics-section">
+        <h2>Student Statistics</h2>
+        <ul>
+          <li>Total Students: <span>30</span></li>
+          <li>Enrolled Students: <span>30</span></li>
+          <li>Expelled Students: <span>30</span></li>
+          <li>Gryffindor Students: <span>30</span></li>
+          <li>Hufflepuff Students: <span>30</span></li>
+          <li>Slytherin Students: <span>30</span></li>
+          <li>Ravenclaw Students: <span>30</span></li>
+        </ul>
+      </aside>
+    </main>
     <footer></footer>
   </body>
   <script src="js/main.js"></script>
